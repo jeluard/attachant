@@ -9,8 +9,8 @@ Usage: java -jar attachant.jar id [options]
 
 where options include:
   load agentJarPath (options)					To load specified agent jar
-	load-self (options)						To load this jar as an agent
-	load-remote-management port authenticate ssl (options)		To load remote-management agent
+  load-self (options)						To load this jar as an agent
+  load-remote-management port authenticate ssl (options)        To load remote-management agent
 ```
 
 # Maven dependency
