@@ -88,12 +88,7 @@
         </executions>
         <configuration>
           <obfuscate>false</obfuscate>
-          <injar>${project.build.finalName}.jar</injar>
-          <attach>true</attach>
-          <outputDirectory>${project.build.directory}</outputDirectory>
-          <proguardInclude>${basedir}/proguard.conf</proguardInclude>
           <libs>
-            <!--lib>${java.home}/bundle/Classes/classes.jar</lib-->
             <lib>${tools.jar}</lib>
           </libs>
           <options>
