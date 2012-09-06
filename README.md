@@ -1,6 +1,6 @@
 ![CI status](https://secure.travis-ci.org/jeluard/attachant.png)
 
-Programmatically attach Java agent to local HotSopt virtual machines.
+Programmatically attach Java agents to local HotSpot virtual machines.
 
 # Usage
 
