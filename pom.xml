@@ -133,15 +133,27 @@
   <profiles>
     <!-- Make sure we detect correct rt.jar location -->
     <profile>
-      <id>default-profile</id>
+      <id>jre-profile</id>
       <activation>
-        <activeByDefault>true</activeByDefault>
+        <activeByDefault>false</activeByDefault>
         <file>
           <exists>${java.home}/../lib/rt.jar</exists>
         </file>
       </activation>
       <properties>
         <rt.jar>${java.home}/../lib/rt.jar</rt.jar>
+      </properties>
+    </profile>
+    <profile>
+      <id>jdk-profile</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <file>
+          <exists>${java.home}/../jre/lib/rt.jar</exists>
+        </file>
+      </activation>
+      <properties>
+        <rt.jar>${java.home}/../jre/lib/rt.jar</rt.jar>
       </properties>
     </profile>
     <profile>
