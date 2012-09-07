@@ -5,6 +5,7 @@
   <artifactId>attachant</artifactId>
   <version>0.9-SNAPSHOT</version>
   <name>Attachant</name>
+  <url>https://github.com/jeluard/attachant</url>
 
   <parent>
     <groupId>org.sonatype.oss</groupId>
