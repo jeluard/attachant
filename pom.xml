@@ -45,7 +45,7 @@
   <scm>
     <connection>scm:git:git@github.com:jeluard/attachant</connection>
     <developerConnection>scm:git:git@github.com:jeluard/attachant</developerConnection>
-    <url>scm:git:git@github.com:jeluard/attachant</url>
+    <url>git@github.com:jeluard/attachant</url>
   </scm>
 
   <issueManagement>
