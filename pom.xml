@@ -90,7 +90,7 @@
           <obfuscate>false</obfuscate>
           <proguardVersion>4.8</proguardVersion>
           <libs>
-            <lib>${tools.jar}</lib>
+            <lib>${rt.jar}</lib>
           </libs>
           <options>
             <option>-keep public class com.github.jeluard.attachant.Main {public static void main(java.lang.String[]);}</option>
@@ -118,7 +118,7 @@
               <rules>
                 <requireFilesExist>
                   <files>
-			  <file>${tools.jar}</file>
+                    <file>${rt.jar}</file>
                   </files>
                 </requireFilesExist>
               </rules>
@@ -131,17 +131,17 @@
   </build>
 
   <profiles>
-    <!-- Make sure we detect correct tools.jar location -->
+    <!-- Make sure we detect correct rt.jar location -->
     <profile>
       <id>default-profile</id>
       <activation>
         <activeByDefault>true</activeByDefault>
         <file>
-          <exists>${java.home}/../lib/tools.jar</exists>
+          <exists>${java.home}/../lib/rt.jar</exists>
         </file>
       </activation>
       <properties>
-        <tools.jar>${java.home}/../lib/tools.jar</tools.jar>
+        <rt.jar>${java.home}/../lib/rt.jar</rt.jar>
       </properties>
     </profile>
     <profile>
@@ -153,7 +153,7 @@
         </file>
       </activation>
       <properties>
-        <tools.jar>${java.home}/../Classes/classes.jar</tools.jar>
+        <rt.jar>${java.home}/../Classes/classes.jar</rt.jar>
       </properties>
     </profile>
   </profiles>
